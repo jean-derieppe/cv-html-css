@@ -1,12 +1,11 @@
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: .9rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -19,6 +18,10 @@ a:hover{
   text-decoration: underline;
 }
 
+ul {
+  list-style-type: none;
+}
+
 p{
   margin: 0 0 1rem;
   text-align: center;
@@ -29,6 +32,7 @@ h1{
   font-size: 2.5rem;
   margin-bottom: .5rem;
   text-align: center;
+  color: #3971d1;
 }
 
 h2{
@@ -36,27 +40,11 @@ h2{
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  color: #3971d1;
 }
 
 .salon{
   text-align: right;
-}
-
-.text-blue{
-  color: #4472C4;
-  size-adjust: center;
-}
-
-.text-darkblue{
-  color: #002060;
-}
-
-.text-uppercase{
-  text-transform: uppercase; 
-}
-
-.icon{
-  margin-right: .5rem;
 }
 
 .cv-container{
@@ -69,20 +57,47 @@ h2{
 }
 
 .section{
+  margin: 0px 0px 0px 0px;
   margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: -4px 4px 6px 0px #3971d1;
+}
+
+
+.section1{
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  width: 47.5%;
+}
+
+.section2{
+  display: block;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  width: 47.5%;
 }
 
 /* LEFT COLUMN */
 .left-column{
   padding: 25px 50px 50px 50px;
-  background-color: #4472C4;
+  background-color: #3971d1;
   color: white;
+  text-shadow: -5px 3px 4px 5px white;
   width: 100%;
 }
 
+.left-column h2{
+  color: white;
+}
+
 .portait{
-  border-radius: 50%;
-  max-width: 140px;
+  border-radius: 35%;
+  max-width: 200px;
+  max-height: 300px;
   margin: auto;
   display: block;
   margin-bottom: 50px;
@@ -108,7 +123,7 @@ h2{
 /* HEADER */
 .header{
   grid-area: header;
-  padding: 25px 25px 25px 25px;
+  padding: 0px 25px 0px 25px;
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
@@ -118,20 +133,29 @@ h2{
 .infos{
   columns: 2;
   list-style-type: none;
-  padding: 0;
+  padding: 25;
   text-align: space-between;
 }
 
 /* CONTENT */
-.section{
-  text-align: center;
-}
 .content{
-  grid-area: content;
-  padding: 25px;
+  padding: 45px 25px 0px 25px;
+}
+
+.content1{
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: -4px 4px 6px 0px #3971d1;
 }
 
 .experience-list{
   list-style-type: none;
   text-align: center;
+}
+
+#li{
+  display: flex;
+  flex-direction: row-reverse;
 }
